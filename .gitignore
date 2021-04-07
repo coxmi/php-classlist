@@ -1,0 +1,13 @@
+
+# Ignore hidden system files
+*~
+.DS_Store
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes
+
+
+# Ignore composer
+/vendor/
+.phpunit.*
+phpunit.*
