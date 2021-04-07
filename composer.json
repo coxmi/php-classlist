@@ -1,4 +1,12 @@
 {
+    "name": "coxmichael/classlist",
+    "description": "helper utility to concat a list of class names",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "files": ["src/classlist.php"]
+    },
+    "require": {},
     "require-dev": {
         "pestphp/pest": "^1.0"
     }

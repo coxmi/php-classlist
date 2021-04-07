@@ -1,14 +1,6 @@
 <?php
 
-/*
-	A simple utility for conditionally concatenating a list of class names
-	classlist('one', 'two') // 'one two'
-	classlist(['conditional' => true]) // 'conditional'
-	classlist(['conditional' => false]) // ''
-	classlist(['sub', 'array'], (object) ['object' => true]) // 'sub array object'
-	All falsy values are ignored: false, 0, null, "", [] 
-	Arrays will be flattened
-*/
+if (function_exists('classlist')) return;
 
 function classlist() : string {
 	$classlist = implode(' ', tokens(func_get_args()));
