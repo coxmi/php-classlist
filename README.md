@@ -6,7 +6,13 @@ A simple utility for conditionally concatenating a list of class names.
 classlist('one', 'two') // 'one two'
 classlist(['conditional' => true]) // 'conditional'
 classlist(['conditional' => false]) // ''
-classlist(['sub', 'array'], (object) ['object' => true]) // 'sub array object'
+classlist(['sub', 'array'], (object) ['conditional' => true]) // 'sub array conditional'
+```
+
+**Install**
+
+```bash
+composer require coxmichael/classlist
 ```
 
 **Usage**
@@ -19,8 +25,7 @@ classlist(['sub', 'array'], (object) ['object' => true]) // 'sub array object'
 Or retrieve the array of class names with a tokenlist:
 
 ```php
-$tokens = tokenlist('in-results', [ 'not-in-results' => false ]);
-
+$tokens = tokenlist('in-results', [ 'not-in-results' => false ]) // ['in-results']
 ```
 
 **Miscellaneous**
